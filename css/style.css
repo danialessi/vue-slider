@@ -38,6 +38,7 @@
 
 .circle {
     color: white;
+    padding: 5px;
 }
 
 .circle.active {

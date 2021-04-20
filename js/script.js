@@ -15,10 +15,18 @@ var app = new Vue(
             nextImage() {
                 const next = this.currentImage + 1;
                 this.currentImage = next;
+
+                if(next == this.imagesPaths.length) {
+                    this.currentImage = 0;
+                }
             },
             previousImage() {
                 const prev = this.currentImage - 1;
                 this.currentImage = prev;
+
+                if(prev < 0) {
+                    this.currentImage = this.imagesPaths.length - 1;
+                }
             }
         }
     }
