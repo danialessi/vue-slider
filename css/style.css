@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider-container {
+    max-width: 70%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 40px;
+}
+
+.images {
+    padding: 30px;
+}
+
+.images img {
+    width: 100%;
+}
