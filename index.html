@@ -21,7 +21,7 @@
         <!-- slider  -->
         <div class="slider-container">
             
-            <div class="arrow"><i class="fas fa-chevron-left"></i></div>
+            <div @click="previousImage" class="arrow"><i class="fas fa-chevron-left"></i></div>
 
             <div class="images">
                 <img :src="imagesPaths[currentImage]" alt="">
