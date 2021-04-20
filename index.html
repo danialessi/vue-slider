@@ -24,13 +24,20 @@
             <div class="arrow"><i class="fas fa-chevron-left"></i></div>
 
             <div class="images">
-                <img src="img/campagna.jpg" alt="campagna">
+                <img :src="imagesPaths[currentImage]" alt="">
             </div>
 
-            <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+            <div @click="nextImage" class="arrow"><i class="fas fa-chevron-right"></i></div>
 
         </div>
         <!-- end slider  -->
+
+        <div class="circles-container">
+            <span v-for="image in imagesPaths" class="circle">
+                <i class="fas fa-circle"></i>
+            </span>
+            
+        </div>
     </div>
     
 

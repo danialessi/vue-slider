@@ -9,6 +9,7 @@
     margin: 30px auto;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .arrow {
@@ -21,4 +22,23 @@
 
 .images img {
     width: 100%;
+}
+
+.circles-container {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.circles {
+    color: white;
+}
+
+.circle.active {
+    color: blue;
 }
