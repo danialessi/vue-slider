@@ -33,7 +33,7 @@
         <!-- end slider  -->
 
         <div class="circles-container">
-            <span v-for="image in imagesPaths" class="circle">
+            <span v-for="(image, index) in imagesPaths" class="circle" :class="{ 'active': index == currentImage }">
                 <i class="fas fa-circle"></i>
             </span>
             

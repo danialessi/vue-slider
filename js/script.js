@@ -3,7 +3,7 @@ var app = new Vue(
         el: '#root',
         data: {
             // images
-            currentImage: 0,
+            currentImage: 2,
             imagesPaths: [
                 'img/campagna.jpg',
                 'img/cascate.webp',
