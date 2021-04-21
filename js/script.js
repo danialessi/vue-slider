@@ -28,6 +28,13 @@ var app = new Vue(
                     this.currentImage = this.imagesPaths.length - 1;
                 }
             }
+        },
+        created() {
+            const vueObj = this;
+
+            setInterval(() => {
+                this.nextImage();
+            }, 2000);
         }
     }
-)
+);
